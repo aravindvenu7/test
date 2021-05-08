@@ -2,23 +2,30 @@
 <html>
 <head>
 <script>
-function odd_even(){
+function pickup(){
 var no;
 no=Number(document.getElementById("no_input").value);
-if(no%2==0)
+if(no==1)
 {
-alert("Even Number");
+alert("If you were a fruit, you’d be a ‘fine-apple’.");
+}
+else if(no==2)
+{
+alert("We took a class together right? Pretty sure it was chemistry.");
+}
+else if(no==3)
+{
+alert("Are you a 45-degree angle? Because you're a-cutie");
 }
 else
 {
-alert("Odd Number");
-}
+alert("I’d say, ‘God bless you,’ but it looks like he already did.")
 }
 </script>
 </head>
-  <title>Pragathi!</title>
 <body>
-Enter Any Number:<input id="no_input"><br />
-<button onclick="odd_even()">Click</button>
+<h1> Pragathi!</h1>  
+Enter Any Number Between 1 and 5:<input id="no_input"><br />
+<button onclick="pickup()">Click</button>
 </body>
 </html>
